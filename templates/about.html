@@ -1,0 +1,29 @@
+<!-- templates/about.html -->
+
+
+{% extends 'base.html' %} {% load static %} {% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+</head>
+
+<body>
+    <div>
+        <h1>About Page</h1>
+    </div>
+    <div>
+        <h2>Raven Mirabeau</h2>
+        <img id="ray-pic" class="ray-pic" src="{% static 'raven-1.jpg' %}" style="max-width: 20%;" alt="Ray pic">
+        <p>I enjoy making Raspberry Pi projects</p>
+    </div>
+</body>
+
+</html>
+
+
+
+{% endblock content %}
